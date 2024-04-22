@@ -1,0 +1,66 @@
+/* .header */
+@import url("/src/utils/Colors.css");
+
+.header {
+  padding: 0.1rem 2rem;
+  background: var(--primary-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: var(--type-first);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px; /* Adiciona padding aos lados */
+}
+
+.menu {
+  display: flex;
+  list-style-type: none; /* Remove os marcadores da lista */
+  transition: 1s;
+  align-items: center;
+  margin-right: 140px;
+}
+
+.menuButton {
+  position: relative;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  color: #959595;
+  font-size: 16px;
+  margin-right: 20px;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.menuButton:hover {
+  color: #0056b3;
+}
+
+.menuButton::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0; /* Set initial width to 0 */
+  height: 2px;
+  background-color: #013d7e;
+  transition: width 0.3s ease-in-out;
+}
+
+.menuButton:hover::after {
+  width: 100%; /* Grow the bar to full width on hover */
+}
+
+.menuButton:not(:hover)::after {
+  width: 0; /* Set width back to 0 when not hovering */
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  margin-left: 150px;
+}
