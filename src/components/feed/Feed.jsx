@@ -1,6 +1,6 @@
 import russo2 from "../../assets/russo2.jpg";
-
 import { Button, Container, Flex, Text, Box, Image } from "@chakra-ui/react";
+import AnimatedButton from "../frames/AnimatedButton";
 
 const Feed = () => {
   return (
@@ -83,9 +83,33 @@ const Feed = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
             </Text>
+            <Box
+              display="grid"
+              w={{ base: "25rem" }}
+              ml={{ base: "25rem", sm: "center" }}
+            >
+              <AnimatedButton
+                w={{ base: "fit-content", sm: "fit-content", md: "20rem" }} // Ajustando a largura do botão
+                p={{ base: "1rem", sm: "1rem", md: "1.5rem" }} // Ajustando o espaçamento interno do botão
+                bg="red.500" // Mudando a cor de fundo do botão
+                borderRadius="full" // Adicionando bordas arredondadas para tornar o botão circular
+                boxShadow="md" // Adicionando uma sombra ao botão
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                alignSelf="center"
+                mt="2rem" // Adicionando margem superior para separar o botão do texto acima
+              >
+                <Text
+                  fontSize={{ base: "md", sm: "md", md: "lg" }}
+                  fontWeight="bold"
+                  color="white"
+                >
+                  Acessar Meus Cursos
+                </Text>
+              </AnimatedButton>
+            </Box>
           </Box>
-
-          <Button>Bora</Button>
         </Flex>
       </Container>
     </>

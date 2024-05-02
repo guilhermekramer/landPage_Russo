@@ -1,14 +1,16 @@
 import { motion } from "framer-motion";
-import React from "react";
+import { Button } from "@chakra-ui/react";
 
-const AnimatedButton = ({ props }) => {
+const AnimatedButton = ({ children, ...props }) => {
   return (
     <motion.button
-      initial={{ opacity: props.opacity, scale: props.scale }} // Definindo o estado inicial da animação
-      animate={{ opacity: props.opacity, scale: props.scale }} // Definindo o estado final da animação
-      transition={{ duration: props.duration }} // Definindo a duração da animação
+      whileHover={{ opacity: 0.8 }} // Define a opacidade ao passar o mouse sobre o botão
+      whileTap={{ scale: 0.9 }} // Define a escala ao clicar no botão
+      transition={{ duration: 0.2 }} // Define a duração da transição
     >
-      Meu Botão Animado
+      <Button fontFamily="heading" fontSize="20" borderRadius="5" {...props}>
+        {children}
+      </Button>
     </motion.button>
   );
 };
