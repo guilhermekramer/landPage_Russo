@@ -1,18 +1,18 @@
-import React from "react";
 import style from "./style.module.css";
+import { Box, styled } from "@chakra-ui/react";
 
 const Header = () => {
   return (
-    <header className={style.header}>
-      <nav className={style.nav}>
-        <h3 className={style.logo}>Logo do Jorge</h3>
-        <div className={style.menu}>
-          <button className={style.menuButton}>Quem sou</button>
-          <button className={style.menuButton}>Curso</button>
-          <button className={style.menuButton}>Contato</button>
-        </div>
-      </nav>
-    </header>
+    <Box className={style.header}>
+      <Box className={style.nav}>
+        <Box className={style.logo}>Logo do Jorge</Box>
+        <Box className={style.menu}>
+          <Box className={style.menuButton}>Quem sou</Box>
+          <Box className={style.menuButton}>Curso </Box>
+          <Box className={style.menuButton}>Contato </Box>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 
