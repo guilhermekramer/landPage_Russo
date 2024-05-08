@@ -3,7 +3,7 @@ import Header from "./components/header/Header";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "../theme";
 import BackgroundImage from "./components/background/ImageBackground";
-import background1 from "../src/assets/background1.jpg";
+import background1 from "../src/assets/backgroundBandeira.jpg";
 
 function App() {
   return (

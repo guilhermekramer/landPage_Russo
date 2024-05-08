@@ -84,8 +84,7 @@ const Feed = () => {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
             </Text>
             <Box
-              display="grid"
-              w={{ base: "25rem" }}
+              w={{ base: "100%" }}
               ml={{ base: "25rem", sm: "center" }}
             >
               <AnimatedButton

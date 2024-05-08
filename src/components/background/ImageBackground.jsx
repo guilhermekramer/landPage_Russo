@@ -19,7 +19,7 @@ const BackgroundImage = ({ src, children }) => {
         backgroundImage={`url(${src})`}
         backgroundSize="cover"
         backgroundPosition="center"
-        filter="blur(8px)"
+        filter="blur(10px)"
         zIndex="-1"
       />
       {children}
